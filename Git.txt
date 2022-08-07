@@ -1,0 +1,58 @@
+git init 初始化仓库
+git clone 克隆现有仓库
+git add 跟踪新文件
+cat .gitignore 忽略文件
+git commit 提交变更
+git status 查看当前文件状态
+git diff 查看具体修改内容
+git rm 移除文件
+git mv 移动文件
+git log 查看提交历史
+git commit --amend 重新提交
+git reset --hard 版本回退
+git reset HEAD [file] 撤销已暂存的文件，已经提交到暂存区
+git checkout -- [file] 撤销对文件的修改，尚未提交到暂存区
+git remote -v 显示远程仓库
+git remote add [shortname] [url] 添加远程仓库
+git fetch [remote-name] 从远程仓库获取和拉取数据
+git push [remote-name] [branch-name] 将数据推送到远程仓库
+git remote show [remote-name] 检查远程仓库
+git remote rename [old-name] [new-name] 重命名远程仓库
+git remote rm [remote-name] 删除远程仓库
+git tag 列举标签
+git tag -a [tag-name] -m [] 创建注释标签
+git show [tag-name] 查看标签数据
+git tag [tag-name] 创建轻量标签
+git tag -a [tag-name] [commit] 补加标签
+git push [remote-name] [tag-name]/--tags 共享标签
+git checkout -b [branchname] [tag-name] 检出标签
+git branch [branch-name] 创建分支
+git checkout [branch-name] 切换分支
+git checkout -b [branch-name] 创建并切换分支
+git merge 合并分支
+git branch -d [branch-name] 删除分支
+git branch -D [branch-name] 强行删除分支
+git branch -v 查看每个分支上的最新提交
+git branch --merged/--no-merged 查看那些分支已经/没有并入
+git fetch 拉取
+git checkout -b [branch-name] origin/[branch-name]
+git push [remote-name] --delete [branch-name] 删除远程分支
+git rebase [basebranch] [topicbranch] 变基
+git pull --rebase
+git reflog 用来记录每一次命令
+git checkout -- [file] 让文件回到最近一次git commit或git add时的状态
+git switch -c [branch-name] 创建并切换到新的分支
+git log --graph --pretty=oneline --abbrev-commit 查看分支历史
+git merge --no-ff -m 普通模式合并，合并后历史右分支
+git stash 保存工作现场
+git stash pop 回到工作现场
+git cherry-pick [commit] 把[commit]的提交复制到当前分支
+git branch --set-upstream-to=[origin/dev] [dev] 设置dev和origin/dev的链接
+git tag [tag-name] 默认标签是打在最新提交的commit上的
+git tag [tag-name] [commit] 为某次commit打上标签
+git show [tag-name] 查看标签信息
+git tag -a [tag-name] -m [] [commit] 创建带有说明的标签
+git tag -d [tag-name] 删除标签
+git push origin [tag-name] 推送某个标签到远程
+git push origin --tags 推送全部标签
+git push origin :refs/tags/[tag-name] 删除远程标签，要先删除本地标签
